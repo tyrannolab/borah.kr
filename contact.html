@@ -16,51 +16,50 @@
     <link rel="stylesheet" href="index/css/style.css">
     <link rel="stylesheet" href="index/css/reset.css">
 </head>
-<body>
-    <div id="wrap">
-        <div id="headmenu">
-            <div class="container">
-                <a href="index.html"><img src="index/img/logo.png" class="logo"></a>
-                <div class="quick">
-                    <a href="#">문의하기</a>
-                    <a href="about.html">보라기획 소개</a>
-                </div>
-            </div>
-        </div>
-        <div id="header">
-            <div class="container">
-                <div class="title">
-                    <p>보라기획</p>
-                </div>
-            </div>
-        </div>
-        <div id="main-banner">
-            <div class="container">
-                <div class="main-banner-text">
-                    <p>이렇게 저렇게 만들어보세요!</p>
-                </div>
-                <!-- button -->
-                <div id="button-1">
-                    <form action="about.html">
-                        <button>더 알아보기</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    <div id="contents">
-        <div id="section">
-            <div class="container"><h2>Section</h2></div>
-        </div>
-    </div>
-    <div id="footer">
-        <div class="container">
-            <img src="index/img/logo.png" class="footer-logo">
-            <br><b>보라기획</b>
-            <br>사업자등록번호 : 876-11-01528
-            <br>서울특별시 마포구 독막로6길 9, 2층 2518호(합정동)
-            <br>
-            <br>Copyright ⓒ 보라기획 All rights reserved.
-        </div>
-    </div>
-</body>
-</html>
+<style type="text/css">
+    <!--
+    td { font-size:12px; color:#333333; font-weight:bold;}
+    table { border:#CCCCCC solid 1px;}
+    .form_name { width:60px; height:16px; font-size:12px; color:#666666; background-color:#E3E3E3; border:solid 1px #999999;}
+    .form_subject { width:250px; height:16px; font-size:12px; color:#666666; background-color:#E3E3E3; border:solid 1px #999999;}
+    .form_mail1 { width:150px; height:16px; font-size:12px; color:#666666; background-color:#E3E3E3; border:solid 1px #999999;}
+    .form_mail { width:100px; height:16px; font-size:12px; color:#666666; background-color:#E3E3E3; border:solid 1px #999999;}
+    .form_memo { width:300px; height:250px; font-size:12px; color:#666666; background-color:#E3E3E3; border:solid 1px #999999;}
+    .form_submit { width:50px; height:16px; font-size:12px; color:#FFFFFF; background-color:#999999; border: solid 1px }
+    -->
+    </style>
+    <body>
+    <table width="400" border="0" cellspacing="0" cellpadding="0"><form action="mail_send.php">
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="100" height="20" align="center" valign="middle"><div align="center"><strong>보낸이</strong></div></td>
+        <td width="300"><input type="text" class="form_name" name="subject" maxlength="4"></td>
+      </tr>
+      <tr>
+        <td height="10" align="center" valign="middle"><div align="center"><strong>이메일</strong></div></td>
+        <td><input name="mailid" type="text" class="form_mail1">
+          @
+          <input name="mail" type="text" class="form_mail"></td>
+      </tr>
+      <tr>
+        <td height="20" align="center" valign="middle"><div align="center">제목</div></td>
+        <td><input name="subject" type="text" class="form_subject" id="name" maxlength="50"></td>
+      </tr>
+      <tr>
+        <td align="center" valign="middle"><div align="center"><strong>문의 사항 </strong></div></td>
+        <td><textarea name="memo" class="form_memo"></textarea></td>
+      </tr>
+      <tr>
+        <td><div align="center"></div></td>
+        <td align="right">
+     
+        <input name="Submit2" type="reset" class="form_submit" value="다시쓰기">
+          <input name="Submit" type="submit" class="form_submit" value="보내기"></td></tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr></form>
+    </table>
+    </body>
+    </html>
