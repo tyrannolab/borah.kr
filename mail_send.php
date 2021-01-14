@@ -11,7 +11,7 @@ function message ($message)
 $formmail=$mailid."@".$mail;
 $mh .="Return-Path: $frommailrn";
 $mh .="From: $name <$frommail>rn";
-$tomail="ogit@ogit.kr";
+$tomail="edik.choi@gmail.com";
 if($subject and $memo and $mail and $mailid ==""){
  message('모두 빠짐없이 입력해주세요');
 }else{
